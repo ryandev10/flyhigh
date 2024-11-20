@@ -1,4 +1,3 @@
-/* Estilo geral */
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f4f4f4;
@@ -17,6 +16,7 @@ h2 {
     background-color: #0056b3;
     border-color: #0056b3;
 }
+
 .btn {
     transition: all 0.3s ease;  
 }
@@ -40,4 +40,30 @@ h2 {
     color: white;
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#carrossel .carousel-inner {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    width: 100%;
+}
+
+#carrossel .carousel-item {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    flex: 0 0 auto; 
+    width: 100%;  
+}
+
+#carrossel .carousel-item img {
+    max-width: 100%; 
+    height: auto;  
+    object-fit: contain;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    max-height: 400px;  
 }

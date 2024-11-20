@@ -1,8 +1,6 @@
-// Validação do formulário de contato
 document.getElementById('formContato').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
+    event.preventDefault(); 
 
-    // Validações simples
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
     const telefone = document.getElementById('telefone').value;
@@ -14,7 +12,6 @@ document.getElementById('formContato').addEventListener('submit', function(event
     }
 });
 
-// Função para inicializar o Google Maps
 function initMap() {
     const location = { lat: 48.8566, lng: 2.3522 }; // Paris
     const map = new google.maps.Map(document.getElementById("googleMap"), {
