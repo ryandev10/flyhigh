@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacote Nova York - FlyHigh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Adicionar o script da API do Google Maps com sua chave API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+
+    <script>
+        function initMap() {
+            var location = { lat: 40.712776, lng: -74.005974 };
+
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: location
+            });
+
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "Nova York"
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">FlyHigh</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-nos.html">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="pacote-detalhes" class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/pacote3.jpg" class="img-fluid" alt="Pacote Nova York">
+            </div>
+            <div class="col-md-6">
+                <h2>Pacote Nova York</h2>
+                <p><strong>Descrição:</strong> Viva a experiência única da cidade que nunca dorme! Este pacote de 5 dias inclui os pontos turísticos mais icônicos de Nova York, além de atividades inesquecíveis.</p>
+                <p><strong>Atrações:</strong></p>
+                <ul>
+                    <li>Times Square</li>
+                    <li>Estátua da Liberdade</li>
+                    <li>Empire State Building</li>
+                    <li>Caminhada pelo Central Park</li>
+                    <li>Musicais da Broadway</li>
+                    <li>Museu de Arte Moderna (MoMA)</li>
+                </ul>
+                <p><strong>Inclui:</strong> Transporte, ingressos para as atrações e city tour exclusivo.</p>
+                <a href="https://www.booking.com" class="btn btn-primary" target="_blank">Comprar Pacote</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa" class="container py-5">
+        <h3>Localização do Pacote Nova York</h3>
+        <div id="map" style="height: 400px; width: 100%;"></div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Viagens Incríveis. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

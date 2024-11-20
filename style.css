@@ -1,0 +1,43 @@
+/* Estilo geral */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-primary, .btn-success {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover, .btn-success:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.btn {
+    transition: all 0.3s ease;  
+}
+
+.btn:hover {
+    background-color: #28a745; 
+    color: white; 
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-primary:hover {
+    background-color: #007bff;  
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-success:hover {
+    background-color: #218838;  
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
