@@ -13,7 +13,7 @@ document.getElementById('formContato').addEventListener('submit', function(event
 });
 
 function initMap() {
-    const location = { lat: 48.8566, lng: 2.3522 }; // Paris
+    const location = { lat: 48.8566, lng: 2.3522 }; 
     const map = new google.maps.Map(document.getElementById("googleMap"), {
         zoom: 12,
         center: location,
