@@ -67,3 +67,10 @@ h2 {
     margin-right: auto;  
     max-height: 400px;  
 }
+/* Estilo para a imagem do ícone Wi-Fi */
+.wifi-icon {
+    width: 5px;  /* Ajuste o tamanho conforme necessário */
+    height: 5px; /* Mantenha a proporção da imagem */
+    margin-right: 5px; /* Adiciona um espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
